@@ -74,7 +74,7 @@ document.getElementById('scroll-right').addEventListener('click', () => showTrac
 // Initialize
 renderPlaylist();
 
-// --- bitmap background ---
+/* // --- bitmap background ---
 const bitmapImages = [
   "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80",
   "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80",
@@ -87,7 +87,7 @@ function changeBg() {
   bgIndex = (bgIndex + 1) % bitmapImages.length;
 }
 changeBg();
-setInterval(changeBg, 1500);
+setInterval(changeBg, 1500); */
 
 /* // --- sfera ellittica dietro manifesto ---
 const sfera = document.getElementById('sfera-ellittica');
