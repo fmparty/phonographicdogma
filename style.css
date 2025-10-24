@@ -30,7 +30,7 @@ body {
   letter-spacing: 0.5px;
   font-family: 'Space Grotesk', 'Geist', 'Inter', Arial, sans-serif;
 }
-#bg-bitmap {
+/* #bg-bitmap {
   position: fixed;
   z-index: 0;
   top: 0; left: 0;
@@ -40,8 +40,8 @@ body {
   background-position: center;
   transition: background-image 0.5s;
   filter: grayscale(1) contrast(1.4);
-  pointer-events: none;
-}
+  pointer-events: none; 
+} */
 #sfera-ellittica {
   position: fixed;
   left: 50%;
