@@ -1,0 +1,139 @@
+body {
+  background: #fff;
+  color: #111;
+  font-family: 'Geist', 'Inter', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.manifesto {
+  font-family: 'Space Grotesk', 'Geist', 'Inter', Arial, sans-serif;
+  position: relative;
+  z-index: 2;
+  margin: 1.1rem 0;
+  font-size: 0.82rem;
+  line-height: 1.25;
+  text-align: justify;
+  letter-spacing: 0.01em;
+}
+.manifesto p {
+  margin-bottom: 0.5em;
+  margin-top: 0.25em;
+}
+.headphone-text {
+  display: block;
+  text-align: center;
+  font-size: 1.07rem;
+  color: #ffd700;
+  margin-top: 1.2rem;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.5px;
+  font-family: 'Space Grotesk', 'Geist', 'Inter', Arial, sans-serif;
+}
+#bg-bitmap {
+  position: fixed;
+  z-index: 0;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: #fff;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s;
+  filter: grayscale(1) contrast(1.4);
+  pointer-events: none;
+}
+#sfera-ellittica {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  width: 1200px;
+  height: 430px;
+  z-index: 1;
+  pointer-events: none;
+  background: transparent;
+  opacity: 0.24;
+}
+@media (max-width: 1200px) {
+  #sfera-ellittica { width: 99vw; height: 35vw; }
+}
+#circular-text-canvas {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  width: 540px; height: 240px;
+  pointer-events: none;
+  background: transparent;
+}
+@media (max-width:600px) {
+  #circular-text-canvas { width: 300px; height: 110px; }
+}
+.container, header, .manifesto, .playlist-section {
+  position: relative;
+  z-index: 3;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 1.1rem 0.5rem;
+}
+header h1 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.04em;
+}
+.subtitle {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #777;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+.playlist-section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.playlist-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.scroll-btn {
+  background: #222;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.scroll-btn:hover {
+  background: #333;
+}
+.playlist-scroll {
+  width: 410px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.playlist-item {
+  min-width: 400px;
+  margin: 0 5px;
+  display: none;
+}
+.playlist-item.active {
+  display: block;
+}
+@media (max-width: 500px) {
+  .playlist-scroll { width: 95vw; }
+  .playlist-item { min-width: 90vw; }
+}
