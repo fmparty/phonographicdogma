@@ -89,7 +89,7 @@ function changeBg() {
 changeBg();
 setInterval(changeBg, 1500);
 
-// --- sfera ellittica dietro manifesto ---
+/* // --- sfera ellittica dietro manifesto ---
 const sfera = document.getElementById('sfera-ellittica');
 const sferaCtx = sfera.getContext('2d');
 
@@ -175,4 +175,4 @@ function drawCircularText() {
   circT += 0.003;
   requestAnimationFrame(drawCircularText);
 }
-drawCircularText();
+drawCircularText();*/
