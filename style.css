@@ -1,85 +1,98 @@
 body {
-  background: linear-gradient(180deg, #000 0%, #111 100%);
-  color: #eee;
+  background: #000;
+  color: #e5e5e5;
   font-family: 'Geist', 'Inter', Arial, sans-serif;
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
 }
 .manifesto {
   font-family: 'Space Grotesk', 'Geist', 'Inter', Arial, sans-serif;
   position: relative;
   z-index: 2;
-  margin: 1.1rem 0;
-  font-size: 0.82rem;
-  line-height: 1.25;
-  text-align: justify;
+  margin: 2rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left; /* NIENTE justify nello stile brutal */
   letter-spacing: 0.01em;
+  color: #cfcfcf;
 }
 .manifesto p {
-  margin-bottom: 0.5em;
-  margin-top: 0.25em;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
 }
 .headphone-text {
   display: block;
   text-align: center;
-  font-size: 1.07rem;
-  color: #ffd700;
-  margin-top: 1.2rem;
-  margin-bottom: 0.2rem;
+  font-size: 1rem;
+  color: #ffcc00; /* giallo accento brutal */
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
   letter-spacing: 0.5px;
   font-family: 'Space Grotesk', 'Geist', 'Inter', Arial, sans-serif;
 }
 
 
 
+/* LAYOUT */
 .container, header, .manifesto, .playlist-section {
   position: relative;
   z-index: 3;
 }
 .container {
-  max-width: 700px;
+  max-width: 900px; /* più respiro, estetica brutal */
   margin: auto;
-  padding: 1.1rem 0.5rem;
+  padding: 3rem 2rem; /* molto più spazio */
+  border-top: 1px solid #1a1a1a; /* separazione netta */
 }
+
+/* TITOLI */
 header h1 {
-  font-size: 2.2rem;
-  font-weight: bold;
+  font-size: 3.5rem; /* più impatto */
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 0.2rem;
-  letter-spacing: 0.04em;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+  color: #e5e5e5;
 }
 .subtitle {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  color: #777;
+  color: #8a8a8a; /* testo secondario brutal */
   margin-top: 0.3rem;
   text-align: center;
 }
 .playlist-section h2 {
   text-align: center;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #e5e5e5;
 }
+
+/* PLAYLIST LAYOUT */
 .playlist-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1.2rem; /* più aria */
 }
+
 .scroll-btn {
-  background: #222;
-  color: #fff;
+  background: none;
+  color: #e5e5e5;
   border: none;
   font-size: 2rem;
-  padding: 0.5rem 1rem;
+  padding: 0;
   cursor: pointer;
-  border-radius: 50%;
-  transition: background 0.2s;
+  transition: color 0.2s;
 }
+
 .scroll-btn:hover {
-  background: #333;
+  color: #ffcc00; /* accento brutalista */
 }
 .playlist-scroll {
   width: 410px;
