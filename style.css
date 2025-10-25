@@ -235,6 +235,23 @@ html,body{
   cursor:pointer;
   font-size:.95rem;
 }
+.bottom-link {
+  text-align: center;
+  margin-top: 2.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.bottom-link a {
+  color: #777;
+  font-size: 0.9rem;
+  text-decoration: none;
+  letter-spacing: 0.6px;
+  transition: color 0.25s;
+}
+
+.bottom-link a:hover {
+  color: #fff;
+}
 
 /* Single essay layout (two-column C3) */
 .essay {
