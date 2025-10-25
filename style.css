@@ -1,5 +1,5 @@
 body {
-  background: #000;
+  background: background: linear-gradient(180deg, #000 0%, #111 100%);
   color: #e5e5e5;
   font-family: 'Geist', 'Inter', Arial, sans-serif;
   margin: 0;
@@ -373,4 +373,18 @@ blockquote{
   .tag{ font-size:.85rem; padding:.3rem .6rem; }
   .article-meta{ min-width:64px; font-size:.82rem; }
   .article-body h3{ font-size:1.05rem; }
+}
+
+a.read-more, .top-links a, .bottom-link a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ffd700; /* oro luminoso */
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+a.read-more:hover, .top-links a:hover, .bottom-link a:hover {
+  border-bottom: 1px solid #ffd700;
+  color: #fff;
 }
