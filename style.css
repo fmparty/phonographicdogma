@@ -77,45 +77,69 @@ header h1 {
 }
 
 /* PLAYLIST LAYOUT */
-.playlist-container {
+/* Playlist container */
+.playlist-scroll {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1.2rem; /* più aria */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 0.6rem;
+  padding: 0.2rem 0;
 }
 
+/* Playlist item */
+.playlist-item {
+  min-width: 320px;
+  flex-shrink: 0;
+  display: block;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  font-family: 'Geist', 'Inter', sans-serif;
+}
+
+/* Track title */
+.playlist-item div:nth-child(2) {
+  font-size: 0.95rem;
+  color: #e5e5e5;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Author / small accent red on hover */
+.playlist-item:hover div:nth-child(2) {
+  color: #b02525; /* red metal accent */
+  transition: color 0.28s ease;
+}
+
+/* Scroll buttons */
 .scroll-btn {
-  background: none;
+  background: none; /* no circle */
   color: #e5e5e5;
   border: none;
   font-size: 2rem;
-  padding: 0;
   cursor: pointer;
-  transition: color 0.2s;
+  transition: color 0.28s ease;
 }
 
 .scroll-btn:hover {
-  color: #ffcc00; /* accento brutalista */
+  color: #b02525;
 }
-.playlist-scroll {
-  width: 410px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.playlist-item {
-  min-width: 400px;
-  margin: 0 5px;
-  display: none;
-}
-.playlist-item.active {
-  display: block;
-}
+
+/* Mobile adjustments */
 @media (max-width: 500px) {
-  .playlist-scroll { width: 95vw; }
-  .playlist-item { min-width: 90vw; }
+  .playlist-scroll {
+    width: 95vw;
+  }
+  .playlist-item {
+    min-width: 90vw;
+  }
+  .playlist-item div:nth-child(2) {
+    font-size: 1rem;
+  }
 }
+
 
 /* essay.css — Poetic Digital (E3) + Brutal dark */
 
