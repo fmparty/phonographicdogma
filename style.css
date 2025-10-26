@@ -77,45 +77,20 @@ header h1 {
 }
 
 /* PLAYLIST LAYOUT */
-/* Playlist container */
-.playlist-scroll {
+/* Playlist container generale */
+.playlist-container {
   display: flex;
   align-items: center;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 0.6rem;
-  padding: 0.2rem 0;
+  justify-content: space-between; /* frecce ai lati */
+  gap: 1rem;
+  max-width: 420px; /* larghezza del carosello */
+  margin: 0 auto;
+  position: relative;
 }
 
-/* Playlist item */
-.playlist-item {
-  min-width: 320px;
-  flex-shrink: 0;
-  display: block;
-  padding: 0.4rem 0.6rem;
-  text-align: left;
-  font-family: 'Geist', 'Inter', sans-serif;
-}
-
-/* Track title */
-.playlist-item div:nth-child(2) {
-  font-size: 0.95rem;
-  color: #e5e5e5;
-  line-height: 1.5;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* Author / small accent red on hover */
-.playlist-item:hover div:nth-child(2) {
-  color: #b02525; /* red metal accent */
-  transition: color 0.28s ease;
-}
-
-/* Scroll buttons */
+/* Pulsanti freccia */
 .scroll-btn {
-  background: none; /* no circle */
+  background: none;
   color: #e5e5e5;
   border: none;
   font-size: 2rem;
@@ -124,21 +99,54 @@ header h1 {
 }
 
 .scroll-btn:hover {
+  color: #b02525; /* accento red metal */
+}
+
+/* Scroll container */
+.playlist-scroll {
+  flex: 1; /* prende lo spazio tra le frecce */
+  display: flex;
+  overflow: hidden; /* nasconde la barra di scorrimento */
+  scroll-behavior: smooth;
+  gap: 0.6rem;
+  padding: 0.2rem 0;
+}
+
+/* Singolo item */
+.playlist-item {
+  min-width: 100%; /* occupa tutto lo spazio disponibile */
+  flex-shrink: 0;
+  display: none; /* solo l’attivo si mostra */
+  text-align: center;
+  font-family: 'Geist', 'Inter', sans-serif;
+}
+
+/* Mostra solo l’item attivo */
+.playlist-item.active {
+  display: block;
+}
+
+/* Testo artista */
+.playlist-item div:nth-child(2) {
+  font-size: 1rem;
+  color: #e5e5e5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hover accent su artista */
+.playlist-item:hover div:nth-child(2) {
   color: #b02525;
+  transition: color 0.28s ease;
 }
 
 /* Mobile adjustments */
 @media (max-width: 500px) {
-  .playlist-scroll {
-    width: 95vw;
-  }
-  .playlist-item {
-    min-width: 90vw;
-  }
-  .playlist-item div:nth-child(2) {
-    font-size: 1rem;
-  }
+  .playlist-container { max-width: 95vw; }
+  .playlist-item div:nth-child(2) { font-size: 1rem; }
 }
+
 
 
 /* essay.css — Poetic Digital (E3) + Brutal dark */
