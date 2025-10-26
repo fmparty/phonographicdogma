@@ -1,14 +1,14 @@
 // --- playlist code ---
 const tracks = [
-   {
+  {
     title: "Éliane Radigue: Occam Delta XV by Quatuor Bozzini",
     iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1446815635/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
   },
-    {
+   {
     title: "Radu Malfatti: One man and a fly",
-    <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2380711875/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://cathnor.bandcamp.com/album/one-man-and-a-fly">One man and a fly by Radu Malfatti</a></iframe>
+    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2380711875/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
   },
-    {
+   {
     title: "Eliane Radigue: Adnos",
     iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1269396988/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
   },
