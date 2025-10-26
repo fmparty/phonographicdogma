@@ -1,52 +1,52 @@
 // --- playlist code ---
 const tracks = [
-  {
-    title: "Three Voices - Morton Feldman by Charlotte Mundy",
-    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1771117454/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
-  },
-  {
-    title: "Crippled Symmetry: at June in Buffalo by Morton Feldman",
-    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=319421928/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
-  },
-  {
+   {
     title: "Éliane Radigue: Occam Delta XV by Quatuor Bozzini",
     iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1446815635/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
   },
-  {
-    title: "John Cage - Empty Words by John Cage",
-    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2707716937/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
+    {
+    title: "Radu Malfatti: One man and a fly",
+    <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2380711875/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://cathnor.bandcamp.com/album/one-man-and-a-fly">One man and a fly by Radu Malfatti</a></iframe>
   },
-  {
-    title: "Eva-Maria Houben – works for flute by Eva-Maria Houben",
-    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=247282474/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
-  },
-  {
-    title: "Jürg Frey.Luigi Nono - violin duos by Joanna Becker, Clemens Merkel",
-    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=843759268/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
-  },
-  {
-    title: "So You … (Hermes, Orpheus, Eurydice) by Alvin Lucier",
-    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=4032850209/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
-  },
-  {
-    title: "Adnos by Eliane Radigue",
+    {
+    title: "Eliane Radigue: Adnos",
     iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1269396988/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
   },
   {
-    title: "Eva-Maria Houben - finding some stuff by Eva-Maria Houben",
+    title: "Morton Feldman: Three Voices. By Charlotte Mundy",
+    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1771117454/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
+  },
+    {
+    title: "Eva-Maria Houben: Works for double bass",
+    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=242085484/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
+  },
+   {
+    title: "Ivan Liuzzo, Simone Spampinato, Alvin Lucier: Gentle Fire Basel",
+    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=87817122/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
+  },
+  {
+    title: "Morton Feldman: Crippled Symmetry",
+    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=319421928/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
+  },
+  {
+    title: "Eva-Maria Houben: Works for flute",
+    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=247282474/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
+  },
+  {
+    title: "Jürg Frey.Luigi Nono: violin duos. By Joanna Becker, Clemens Merkel",
+    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=843759268/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
+  },
+  {
+    title: "Alvin Lucier: So You … (Hermes, Orpheus, Eurydice)",
+    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=4032850209/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
+  },
+  {
+    title: "Eva-Maria Houben: Finding some stuff",
     iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2028530921/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
   },
   {
-    title: "Eva-Maria Houben – works for double bass by Eva-Maria Houben",
-    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=242085484/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
-  },
-  {
-    title: "Irei/Tikur by Ivan Liuzzo, Augustin Lipp, Lorenzo Reggiani, James Morley",
+    title: "Ivan Liuzzo: Irei/Tikur with Augustin Lipp, Lorenzo Reggiani, James Morley",
     iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=4165594907/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
-  },
-  {
-    title: "Gentle Fire Basel by Ivan Liuzzo, Simone Spampinato, Alvin Lucier",
-    iframe: `<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=87817122/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless></iframe>`
   }
 ];
 
