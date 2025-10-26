@@ -290,38 +290,41 @@ html,body{
 .essay-main{
   max-width:680px;
 }
-.essay-title{
-  font-family:'Space Grotesk', 'Inter', sans-serif;
-  font-size:2.8rem;
-  font-weight:600;
-  margin:0 0 1rem 0;
-  line-height:1.1;
+/* Uniformare i titoli essay alla playlist */
+.essay-title {
+  font-family: 'Space Grotesk', 'Geist', 'Inter', sans-serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 600;
+  color: #e5e5e5; /* stesso colore dei titoli playlist */
+  margin-bottom: 0.5rem;
 }
-.essay-sub{
-  color:var(--muted);
-  margin-bottom:2rem;
-  font-size:1rem;
+
+.essay-sub {
+  font-family: 'Space Grotesk', 'Geist', 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #8a8a8a; /* colore secondario della playlist */
+  margin-bottom: 1.2rem;
 }
+
 
 /* Main content (serif reading) */
-.article-content{
-  font-family:'Spectral', Georgia, 'Times New Roman', serif;
-  font-weight:300;
-  font-size:1.05rem;
-  color:var(--text);
-  letter-spacing:0.01em;
-  word-wrap:break-word;
-  line-height:1.85;
+.article-content {
+  font-family: 'Spectral', Georgia, 'Times New Roman', serif;
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #cfcfcf; /* colore testo playlist */
 }
 
+
 /* Side area (notes / markers) */
-.essay-side{
-  position:relative;
-  padding-left:1rem;
-  border-left:1px solid var(--line);
-  color:var(--muted);
-  font-size:.95rem;
+.essay-side {
+  padding-left: 1rem;
+  border-left: 1px solid #1a1a1a; /* come playlist container */
+  color: #8f8f8f; /* colore secondario */
+  font-size: 0.95rem;
 }
+
 .side-note{
   margin-bottom:1.2rem;
   padding-left:.6rem;
@@ -418,3 +421,16 @@ a.read-more:hover,
 .bottom-link a:hover {
   color: #b02525; /* red metal hover */
 }
+a.read-link {
+  color: #ffcc00; /* stesso accento playlist */
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255,204,0,0.3);
+  transition: color 0.25s, border-color 0.25s;
+}
+
+a.read-link:hover {
+  color: #b02525; /* rosso metal hover uniforme alla playlist */
+  border-color: #b02525;
+}
+
