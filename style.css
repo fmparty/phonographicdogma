@@ -50,12 +50,15 @@ body {
 
 /* TITOLI */
 header h1 {
-  font-size: 3.5rem; /* più impatto */
+  font-size: clamp(2rem, 9vw, 4rem);
   font-weight: 600;
   text-align: center;
   margin-bottom: 0.5rem;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
   color: #e5e5e5;
+  word-break: break-word;
+  text-transform: uppercase;
 }
 .subtitle {
   display: block;
