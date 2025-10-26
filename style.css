@@ -378,16 +378,19 @@ blockquote{
   .article-body h3{ font-size:1.05rem; }
 }
 
-a.read-more, .top-links a, .bottom-link a {
+/* Modern red-metal hover for links */
+a.read-more, 
+.top-links a, 
+.bottom-link a {
   display: inline-block;
   text-decoration: none;
   font-weight: 600;
-  color: #ffd700; /* oro luminoso */
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s, color 0.2s;
+  color: #e5e5e5;
+  transition: color .28s ease;
 }
 
-a.read-more:hover, .top-links a:hover, .bottom-link a:hover {
-  border-bottom: 1px solid #ffd700;
-  color: #fff;
+a.read-more:hover, 
+.top-links a:hover, 
+.bottom-link a:hover {
+  color: #b02525; /* red metal hover */
 }
